@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="description" content="Materialize is a modern responsive CSS framework based on Material Design by Google. ">
-    <title>Documentation - Materialize</title>
+    <title>PaySpoon-Payroll</title>
     <!-- Favicons-->
     <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
     <meta name="msapplication-TileColor" content="#FFFFFF">
@@ -16,8 +16,6 @@
     <!--  Android 5 Chrome Color-->
     <meta name="theme-color" content="#EE6E73">
     <!--Import Devicons-->
-    <!--Import Roboto-->
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!--Import Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.min.css">
@@ -37,7 +35,7 @@
                         <ul id="nav-mobile" class="hide-on-med-and-down right">
                             <li class="font-12 black_636363 pad-top-15">ADMIN</li>
                             <li><img class="responsive-img pad-top-15" width="48" height="48" src="images/admin.png"></li>
-                            <li><span class="red-text">&#43;</span></li>
+                            <li><span class="red-text"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></li>
                         </ul>
                     </div>
                 </div>
@@ -100,220 +98,37 @@
 
     <!-- **********************- main -********************** -->
     <main>
-
-        <div id="salary_structure">
+        <div id="initiate_payroll">
             <div class="row">
-                <div class="col s12">
-                    <h2 class="content_heading">Salary Structure</h2>
+                <div class="col s12 m6">
+                    <h2 class="content_heading">Initiate Next Payroll</h2>
+                </div>
+                <div class="col s12 m3">
+                    <a href="#" class="btn content_margin blue_btn">PREVIEW PAYROLL</a>
+                    </div>
+                <div class="col s12 m3">
+                <a href="#" class="btn content_margin red_btn2">RUN PAYROLL</a>
                 </div>
                 <div class="col s12">
-                    <div class="col s12 col m5">
-                        <!--salary range-->
-                        <div class="col s12">
-                            <div class="card-panel">
-                                <h3 class="card_heading">Salary Range</h3>
-                                <div>
-                                    <a href="#" class="btn salary_range_btn">0 - 3 Lakhs</a>
-                                </div>
-                                <div>
-                                    <a href="#" class="btn salary_range_btn">3 - 6 Lakhs</a>
-                                </div>
-                                <div>
-                                    <a href="#" class="btn salary_range_btn">6 - 10 Lakhs</a>
-                                </div>
-                                <div>
-                                    <a href="#" class="btn salary_range_btn"> Above 10 Lakhs</a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--                        action-->
-                        <div class="col s12">
-                            <div class="card-panel">
-                                <h3 class="card_heading"> Actions</h3>
-                                <div class="actions">
-
-                                    <ul class="collection">
-                                        <li class="collection-item">
-                                            <div class="center-text">
-                                                <a href="#!" class=""><i class="fa fa-caret-right left" aria-hidden="true"></i></a>General Payroll settings
-                                            </div>
-                                        </li>
-                                        <li class="collection-item">
-                                            <div class="center-text">
-                                                <a href="#!" class=""><i class="fa fa-caret-right left" aria-hidden="true"></i></a>Define custom salary structure
-                                            </div>
-                                        </li>
-                                        <li class="collection-item">
-                                            <div class="center-text">
-                                                <a href="#!" class=""><i class="fa fa-caret-right left" aria-hidden="true"></i></a>Contractor salary structure
-                                            </div>
-                                        </li>
-                                        <li class="collection-item">
-                                            <div class="center-text">
-                                                <a href="#!" class=""><i class="fa fa-caret-right left" aria-hidden="true"></i></a>Contractor salary structure
-                                            </div>
-                                        </li>
-                                        <li class="collection-item">
-                                            <div class="center-text">
-                                                <a href="#!" class=""><i class="fa fa-caret-right left" aria-hidden="true"></i></a>Contractor salary structure
-                                            </div>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col s12 m7">
-                        <div class="card-panel" style="padding: 0px;">
-                            <div class="row">
-                                <div class=" col s12 m7" style="padding: 24px 24px 0 24px;">
-                                    <h3 class="card_heading"><span class="display_inline"> Salary Components</span><span class="display_inline"> ( 0-3 Lakhs)</span> &nbsp;
-                                        <span class="salary_updated">(updated 9 months ago)</span></h3>
-                                </div>
-                                <div class="col s12 m5" style="padding: 24px 24px 0 24px;">
-                                    <a href="#" class=" btn red_btn">save changes</a>
-                                </div>
-                                <!--base content-->
-                                <div class=" col s12 m6 salry_pad0">
-                                    <div class="salry_cmp_blocks">
-                                        <h4 class="salry_cmp_sub">BASE COMPONENT</h4>
-                                    </div>
-                                    <div style="padding: 24px;">
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="basic_salary_chk" checked="checked" />
-                                            <label for="basic_salary_chk" class="checkbox_heading">Basic Salary</label>
-                                        </p>
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="hra_chk" checked="checked" />
-                                            <label for="hra_chk" class="checkbox_heading">HRA</label>
-                                        </p>
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="special_allwnc_chk" checked="checked" />
-                                            <label for="special_allwnc_chk" class="checkbox_heading">Special Allowance</label>
-                                        </p>
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="pf_chk" />
-                                            <label for="pf_chk" class="checkbox_heading">PF</label>
-                                        </p>
-                                    </div>
-
-                                </div>
-                                <!--                                recurring componet-->
-                                <div class=" col s12 m6 salry_pad0">
-                                    <div class="salry_cmp_blocks">
-                                        <h4 class="salry_cmp_sub">RECURRING COMPONENT</h4>
-                                    </div>
-                                    <div style="padding: 24px;">
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="basic_salary_chk" checked="checked" />
-                                            <label for="basic_salary_chk" class="checkbox_heading">Medical Allowance</label>
-                                        </p>
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="hra_chk" checked="checked" />
-                                            <label for="hra_chk" class="checkbox_heading">Employee Gratuity Component</label>
-                                        </p>
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="special_allwnc_chk" checked="checked" />
-                                            <label for="special_allwnc_chk" class="checkbox_heading">Transport Allowance</label>
-                                        </p>
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="pf_chk" />
-                                            <label for="pf_chk" class="checkbox_heading">Add component</label>
-                                        </p>
-                                    </div>
-
-
-                                </div>
-                                <!--                                    adhoc component-->
-                                <div class=" col s12 m6 salry_pad0">
-                                    <div class="salry_cmp_blocks">
-                                        <h4 class="salry_cmp_sub">ADHOC COMPONENT</h4>
-                                    </div>
-                                    <div style="padding: 24px;">
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="basic_salary_chk" checked="checked" />
-                                            <label for="basic_salary_chk" class="checkbox_heading">Incentives</label>
-                                        </p>
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="hra_chk" checked="checked" />
-                                            <label for="hra_chk" class="checkbox_heading">Add component</label>
-                                        </p>
-                                    </div>
-
-
-                                </div>
-                                <!--                                bonus-->
-                                <div class=" col s12 m6 salry_pad0">
-                                    <div class="salry_cmp_blocks">
-                                        <h4 class="salry_cmp_sub">BONUS</h4>
-                                    </div>
-                                    <div style="padding: 24px;">
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="basic_salary_chk" checked="checked" />
-                                            <label for="basic_salary_chk" class="checkbox_heading">Joining Bonus</label>
-                                        </p>
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="hra_chk" checked="checked" />
-                                            <label for="hra_chk" class="checkbox_heading">Yearly Bonus</label>
-                                        </p>
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="special_allwnc_chk" checked="checked" />
-                                            <label for="special_allwnc_chk" class="checkbox_heading">Add component</label>
-                                        </p>
-                                    </div>
-
-
-                                </div>
-                                <!--                                deductio-->
-                                <div class=" col s12 m6 salry_pad0">
-                                    <div class="salry_cmp_blocks">
-                                        <h4 class="salry_cmp_sub">DEDUCTIONS</h4>
-                                    </div>
-                                    <div style="padding: 24px;">
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="basic_salary_chk" checked="checked" />
-                                            <label for="basic_salary_chk" class="checkbox_heading">Add component</label>
-                                        </p>
-                                    </div>
-
-
-                                </div>
-                                <!--                                REIMBURSEMENTS-->
-                                <div class=" col s12 m6 salry_pad0">
-                                    <div class="salry_cmp_blocks">
-                                        <h4 class="salry_cmp_sub">REIMBURSEMENTS</h4>
-                                    </div>
-                                    <div style="padding: 24px;">
-                                        <p>
-                                            <input type="checkbox" class="filled-in" id="basic_salary_chk" checked="checked" />
-                                            <label for="basic_salary_chk" class="checkbox_heading">Add component</label>
-                                        </p>
-                                        <p>
-                                    </div>
-
-
-                                </div>
-
-
-                            </div>
-
-
-
-
-                        </div>
-
-                    </div>
+                <ul class="tabs calender_tab z-depth-1">
+                      <li class="tab col s1 processed"><a href="#test1"><i class="fa fa-check fa-lw" aria-hidden="true"></i>JAN</a></li>
+                    <li class="tab col s1"><a class="active" href="#test2">FEB</a></li>
+                    <li class="tab col s1 "><a href="#test3">MAR</a></li>
+                    <li class="tab col s1"><a href="#test4">APR</a></li>
+                    <li class="tab col s1"><a href="#test5">MAY</a></li>
+                    <li class="tab col s1"><a href="#test6">JUN</a></li>
+                    <li class="tab col s1 "><a href="#test7">JUL</a></li>
+                    <li class="tab col s1"><a href="#test8">AUG</a></li>
+                    <li class="tab col s1"><a href="#test9">SEPT</a></li>
+                    <li class="tab col s1"><a href="#test10">OCT</a></li>
+                    <li class="tab col s1 "><a href="#test12">NOV</a></li>
+                    <li class="tab col s1"><a href="#test13">DEC</a></li>
+                 </ul>
                 </div>
-
             </div>
-
         </div>
-
-
+        
+        
     </main>
     <!-- **********************- /main -********************** -->
 
