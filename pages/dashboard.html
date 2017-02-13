@@ -1,0 +1,142 @@
+<div id="dashboard">
+    <div class="row">
+        <div class="col s12">
+            <div class="col s12 m6">
+                <h2 class="content_heading">Dashboard</h2>
+            </div>
+            <div class="col s12 m3">
+                <a href="#" class="btn content_margin red_btn3 waves-effect waves-light">REPORTS</a>
+            </div>
+            <div class="col s12 m3">
+                <div id="report_year_sel" class="input-field col s7 content_margin">
+                    <select>
+                        <option value="1" selected>2017</option>
+                        <option value="2">2016</option>
+                        <option value="3">2015</option>
+                    </select>
+                    <!--                        <label>Materialize Select</label>-->
+                </div>
+            </div>
+            <!--                recent payroll card-->
+            <div id="recent_payroll" class="col s12 ">
+                <div class="card-panel" style="padding-left: 2.5rem;">
+                    <div class="row">
+                        <h3 class="inp_crd_h">RECENT PAYROLL</h3>
+                        <div class="col s12 m3 l3">
+                            <h3 class="inp_date">JAN 2017</h3>
+                            <div class="inp_date_details">31 calendar days
+                                <br/>Dec 1 2016 - Jan 2 2017</div>
+                        </div>
+
+                        <div class="col s12 m9 l9">
+                            <table>
+                                <tbody>
+                                    <tr class="inp_crd_sub">
+                                        <td>TOTAL EMPLOYEES</td>
+                                        <td class="left_border hide-on-small-only">&nbsp;&nbsp;&nbsp;</td>
+                                        <td>WORKING DAYS</td>
+                                        <td class="left_border hide-on-small-only">&nbsp;&nbsp;&nbsp;</td>
+                                        <td>PROCESSED SALARIES</td>
+                                    </tr>
+                                    <tr class="inp_crd_val">
+                                        <td>26</td>
+                                        <td class="left_border hide-on-small-only">&nbsp;&nbsp;&nbsp;</td>
+                                        <td>27</td>
+                                        <td class="left_border hide-on-small-only">&nbsp;&nbsp;&nbsp;</td>
+                                        <td>25<span class="total_employes">/26</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col s12">
+                            <div class="nxt_payrol_date">Next Payroll is due on Feb 1, 2017</div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="divider"></div>
+                    <!--financles-->
+                    <div class="row">
+                        <div class="col s12 m2">
+                            <h3 class="inp_crd_h" style="padding-top: 10px;">FINANCIALS</h3>
+                        </div>
+                        <div class="col s12 m10">
+                            <table>
+                                <tbody>
+                                    <tr class="inp_crd_sub">
+                                        <td>TOTAL PAYROLL COST</td>
+                                        <td class="hide-on-small-only"></td>
+                                        <td class="hide-on-small-only">EMPLOYEE DEPOSIT</td>
+                                        <td class="hide-on-small-only"></td>
+                                        <td class="hide-on-small-only">TOTAL DEDUCTION</td>
+                                    </tr>
+                                    <tr class="inp_crd_amt">
+                                        <td class="int_total"><i class="fa fa-inr fa-lw" aria-hidden="true"></i> 10, 56,700.00</td>
+                                        <td class="hide-on-small-only">&nbsp;&nbsp;&nbsp;</td>
+                                        <td class="hide-on-small-only"><i class="fa fa-inr fa-lw" aria-hidden="true"></i> 9,40,000.00</td>
+                                        <td class="hide-on-small-only">&nbsp;&nbsp;&nbsp;</td>
+                                        <td class="hide-on-small-only"><i class="fa fa-inr fa-lw" aria-hidden="true"></i> 76,400.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--                        view detils button-->
+                    <div class="row">
+                        <div class="col s12">
+                            <a class="waves-effect waves-light btn center-block red_btn3 waves-effect waves-light">VIEW DETAILS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--                PAYROLL VARIATION-->
+            <div id="payroll_variation">
+                <div class="col s12 m6 l6">
+                    <div class="card-panel" style="padding-left: 2.5rem;">
+                        <div class="row">
+
+                            <div class="col s12 m6">
+                                <h3 class="inp_crd_h">PAYROLL VARIATION</h3>
+                            </div>
+                            <div class="col s12 m3">
+                                <div id="bar_type_sel" class="input-field col s12 m8 ">
+                                    <select>
+                                        <option value="1" selected>Yearly</option>
+                                        <option value="2">2016</option>
+                                        <option value="3">2015</option>
+                                    </select>
+                                    <!--                        <label>Materialize Select</label>-->
+                                </div>
+                            </div>
+                            <div class="col s12 m3">
+                                <div id="bar_year_sel" class="input-field col s12 m8">
+                                    <select>
+                                        <option value="1" selected>2017</option>
+                                        <option value="2">2016</option>
+                                        <option value="3">2015</option>
+                                    </select>
+                                    <!--                        <label>Materialize Select</label>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--   ACTIVITIES              -->
+            <div id="activities">
+                <div class="col s12 m6 l6">
+                    <div class="card-panel" style="padding-left: 2.5rem;">
+                        <div class="row">
+                            <h3 class="inp_crd_h">ACTIVITIES</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('select').material_select();
+
+</script>
